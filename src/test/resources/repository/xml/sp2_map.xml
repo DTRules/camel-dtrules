@@ -1,0 +1,35 @@
+<mapping>
+	<XMLtoEDD>
+		<map>
+			<!--                 -->
+			<!-- Map Attributes  -->
+			<!--                 -->
+			<!--person-->
+			<setattribute tag='age' RAttribute='age' enclosure='person' type='integer' subtype=''></setattribute>
+			<setattribute tag='genderCode' RAttribute='genderCode' enclosure='person' type='string' subtype=''></setattribute>
+			<setattribute tag='name' RAttribute='name' enclosure='person' type='string' subtype=''></setattribute>
+			<setattribute tag='person_ID' RAttribute='person_ID' enclosure='person' type='string' subtype=''></setattribute>
+			<!--result-->
+			<setattribute tag='decision' RAttribute='decision' enclosure='result' type='string' subtype=''></setattribute>
+			<!--                 -->
+			<!-- Create Entities -->
+			<!--                 -->
+			<createentity entity='person' tag='person' id='id'></createentity>
+			<createentity entity='result' tag='result' id='id'></createentity>
+		</map>
+		<!--                 -->
+		<!-- Entity List     -->
+		<!--                 -->
+		<entities>
+			<entity name='person' number='1'></entity>
+			<entity name='result' number='*'></entity>
+		</entities>
+		<!--                 -->
+		<!-- Initialization  -->
+		<!--                 -->
+		<initialization>
+			<initialentity entity='person' epush='true'></initialentity>
+			<initialentity entity='result' epush='true'></initialentity>
+		</initialization>
+	</XMLtoEDD>
+</mapping>

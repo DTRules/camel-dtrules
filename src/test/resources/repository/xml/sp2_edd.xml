@@ -1,0 +1,15 @@
+<entity_data_dictionary version='2' xmlns:xs='http://www.w3.org/2001/XMLSchema'>
+	<entity name='person' access='rw' comment=''>
+		<field name='age' type='integer' subtype='' access='r' input='main' default_value='' comment=''></field>
+		<field name='genderCode' type='string' subtype='' access='r' input='main' default_value='none' comment=''></field>
+		<field name='mapping*key' type='string' subtype='' access='r' input='' default_value='' comment='Mapping Key'></field>
+		<field name='name' type='string' subtype='' access='r' input='main' default_value='' comment=''></field>
+		<field name='person' type='entity' subtype='' access='r' input='' default_value='' comment='Self Reference'></field>
+		<field name='person_ID' type='string' subtype='' access='r' input='main' default_value='' comment=''></field>
+	</entity>
+	<entity name='result' access='rw' comment=''>
+		<field name='decision' type='string' subtype='' access='rw' input='main' default_value='' comment=''></field>
+		<!-- < name='mapping*key' type='string' subtype='' access='r' input='' default_value='' comment='Mapping Key'></field>
+		<field name='result' type='entity' subtype='' access='r' input='' default_value='' comment='Self Reference'></field>-->
+	</entity>
+</entity_data_dictionary>

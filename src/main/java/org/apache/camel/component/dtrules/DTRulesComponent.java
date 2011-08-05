@@ -8,10 +8,23 @@ import org.apache.camel.impl.DefaultComponent;
 public class DTRulesComponent extends DefaultComponent {
 
 	@Override
-	protected Endpoint createEndpoint(String arg0, String arg1,
-			Map<String, Object> arg2) throws Exception {
-		// TODO Auto-generated method stub
-		return null;
+	/**
+	 * The endpoint uri looks like below, while 'foo' is the ruleSet name.</br></br>
+	 * 
+	 * uri --> dtrules://foo?directory=/home/tester/dtrules&name=DTRules.xml&decisionTable=abc&resultEntity=result&trace=true
+	 */
+	protected Endpoint createEndpoint(String uri, String remaining, Map<String, Object> parameters) throws Exception {
+		final DTrulesConfiguration config = new DTrulesConfiguration();
+		
+		// set parameters like name and uri
+		setProperties(config, parameters);
+		
+		// set rule set name
+		config.setRuleset(remaining);
+		
+		// create endpoint
+		DTRulesEndpoint endpoint = new DTRulesEndpoint(uri, this, config);
+		return endpoint;
 	}
 
 }

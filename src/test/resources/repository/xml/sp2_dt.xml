@@ -1,0 +1,87 @@
+<decision_tables>
+<decision_table>
+<table_name>abc</table_name>
+<xls_file>abc.xls</xls_file>
+<attribute_fields>
+<type>FIRST</type>
+<comments></comments>
+<policy_reference></policy_reference></attribute_fields>
+<contexts></contexts>
+<initial_actions></initial_actions>
+<conditions>
+<condition_details>
+<condition_number>1</condition_number>
+<condition_comment>Age &lt; 18</condition_comment>
+<condition_requirement></condition_requirement>
+<condition_description>person.age less than 18</condition_description>
+<condition_postfix>
+person.age 18 &lt; 
+</condition_postfix>
+<condition_column column_value="Y" column_number="1"></condition_column>
+<condition_column column_value="N" column_number="2"></condition_column>
+<condition_column column_value="N" column_number="3"></condition_column>
+<condition_column column_value="-" column_number="4"></condition_column>
+<condition_column column_value="-" column_number="5"></condition_column>
+<condition_column column_value="-" column_number="6"></condition_column>
+<condition_column column_value="-" column_number="7"></condition_column>
+<condition_column column_value="-" column_number="8"></condition_column>
+<condition_column column_value="-" column_number="9"></condition_column>
+<condition_column column_value="-" column_number="10"></condition_column>
+<condition_column column_value="-" column_number="11"></condition_column>
+<condition_column column_value="-" column_number="12"></condition_column>
+<condition_column column_value="-" column_number="13"></condition_column>
+<condition_column column_value="-" column_number="14"></condition_column>
+<condition_column column_value="-" column_number="15"></condition_column>
+<condition_column column_value="-" column_number="16"></condition_column></condition_details>
+<condition_details>
+<condition_number>2</condition_number>
+<condition_comment>male</condition_comment>
+<condition_requirement></condition_requirement>
+<condition_description>person.genderCode == &apos;male&apos;</condition_description>
+<condition_postfix>
+person.genderCode &apos;male&apos; streq 
+</condition_postfix>
+<condition_column column_value="-" column_number="1"></condition_column>
+<condition_column column_value="Y" column_number="2"></condition_column>
+<condition_column column_value="N" column_number="3"></condition_column>
+<condition_column column_value="-" column_number="4"></condition_column>
+<condition_column column_value="-" column_number="5"></condition_column>
+<condition_column column_value="-" column_number="6"></condition_column>
+<condition_column column_value="-" column_number="7"></condition_column>
+<condition_column column_value="-" column_number="8"></condition_column>
+<condition_column column_value="-" column_number="9"></condition_column>
+<condition_column column_value="-" column_number="10"></condition_column>
+<condition_column column_value="-" column_number="11"></condition_column>
+<condition_column column_value="-" column_number="12"></condition_column>
+<condition_column column_value="-" column_number="13"></condition_column>
+<condition_column column_value="-" column_number="14"></condition_column>
+<condition_column column_value="-" column_number="15"></condition_column>
+<condition_column column_value="-" column_number="16"></condition_column></condition_details></conditions>
+<actions>
+<action_details>
+<action_number>1</action_number>
+<action_comment>output a</action_comment>
+<initial_action_requirement></initial_action_requirement>
+<action_description>set result.decision = &apos;a&apos;</action_description>
+<action_postfix>
+&apos;a&apos; cvs /result.decision xdef  
+</action_postfix>
+<action_column column_value="X" column_number="1"></action_column></action_details>
+<action_details>
+<action_number>2</action_number>
+<action_comment>output b</action_comment>
+<initial_action_requirement></initial_action_requirement>
+<action_description>set result.decision = &apos;b&apos;</action_description>
+<action_postfix>
+&apos;b&apos; cvs /result.decision xdef  
+</action_postfix>
+<action_column column_value="X" column_number="2"></action_column></action_details>
+<action_details>
+<action_number>3</action_number>
+<action_comment>output c</action_comment>
+<initial_action_requirement></initial_action_requirement>
+<action_description>set result.decision = &apos;c&apos;</action_description>
+<action_postfix>
+&apos;c&apos; cvs /result.decision xdef  
+</action_postfix>
+<action_column column_value="X" column_number="3"></action_column></action_details></actions></decision_table></decision_tables>
